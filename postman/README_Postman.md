@@ -1,3 +1,5 @@
+April 2021
+
 Hallo zusammen,
 
 hier finden sich die Links zu der Postman Serie von Florian Pilz und der STUGHH:
@@ -13,5 +15,5 @@ Newman und Reporting (bspw. für Pipeline): https://adevait.com/qa/how-to-create
 
 Hier findet ihr auch zwei Dateien hinterlegt, die ihr euch herunterladen und in Postman importieren könnt
 
-Environment: https://github.com/MaikNog/stughhpostman/blob/b0a5b24c9b48cf4f5b563e6f32af6538820b3918/Realworld.postman_environment.json
-Collection: https://github.com/MaikNog/stughhpostman/blob/b0a5b24c9b48cf4f5b563e6f32af6538820b3918/RealWorld.postman_collection.json
+Environment: https://github.com/MaikNog/stughh/blob/82ba2b60b430a3e9d51c36aae691395bbe151f01/postman/Realworld.postman_environment.json
+Collection: https://github.com/MaikNog/stughh/blob/82ba2b60b430a3e9d51c36aae691395bbe151f01/postman/RealWorld.postman_collection.json
