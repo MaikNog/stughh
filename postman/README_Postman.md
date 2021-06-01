@@ -8,10 +8,15 @@ Demo-Umgebung: https://demo.realworld.io/#/
 
 Postman learning:
 
-JavaScript Referenz: https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/ 
+JavaScript Referenz: https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/
+
 Testscript Beispiele: https://learning.postman.com/docs/writing-scripts/script-references/test-examples/ 
+
 Der Collection Runner: https://learning.postman.com/docs/running-collections/intro-to-collection-runs/ 
+
 Newman und Reporting (bspw. für Pipeline): https://adevait.com/qa/how-to-create-elegant-html-reports-in-postman
+
+
 
 Hier findet ihr auch zwei Dateien hinterlegt, die ihr euch herunterladen und in Postman importieren könnt
 
