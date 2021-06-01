@@ -1,0 +1,758 @@
+{
+	"info": {
+		"_postman_id": "1c09ac7b-e91e-4510-b038-db8a78366d90",
+		"name": "RealWorld",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "Delete article",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authority",
+								"value": "conduit.productionready.io"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "authorization",
+								"value": "Token {{Token}}"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+							},
+							{
+								"key": "origin",
+								"value": "https://demo.realworld.io"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://demo.realworld.io/"
+							},
+							{
+								"key": "accept-language",
+								"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+							}
+						],
+						"url": {
+							"raw": "{{BaseUrl}}/articles/{{Article}}",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"articles",
+								"{{Article}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit article",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authority",
+								"value": "conduit.productionready.io"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTU4ODYxLCJ1c2VybmFtZSI6ImxqZGpmZ2JmZCIsImV4cCI6MTYyMzA4NDQwNH0.aPOyoxtNA2o2Kh071V0lwMHOjV23bpzu5VigjTy1XgM"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "origin",
+								"value": "https://demo.realworld.io"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://demo.realworld.io/"
+							},
+							{
+								"key": "accept-language",
+								"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"article\": {\n        \"title\": \"My fancy article 4 edited\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://conduit.productionready.io/api/articles/my-fancy-article-3-utv2hv",
+							"protocol": "https",
+							"host": [
+								"conduit",
+								"productionready",
+								"io"
+							],
+							"path": [
+								"api",
+								"articles",
+								"my-fancy-article-3-utv2hv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all articles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "conduit.productionready.io"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+							},
+							{
+								"key": "origin",
+								"value": "https://demo.realworld.io"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://demo.realworld.io/"
+							},
+							{
+								"key": "accept-language",
+								"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "if-none-match",
+								"value": "W/\"a2f90d8cd49d68492524a12ed3a77e1a\""
+							}
+						],
+						"url": {
+							"raw": "{{BaseUrl}}/articles?limit=10&offset=10",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"articles"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "10"
+								}
+							]
+						},
+						"description": "The request to get all articles"
+					},
+					"response": []
+				},
+				{
+					"name": "Create new article",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "conduit.productionready.io"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "authorization",
+								"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTU4ODYxLCJ1c2VybmFtZSI6ImxqZGpmZ2JmZCIsImV4cCI6MTYyMzA4NDQwNH0.aPOyoxtNA2o2Kh071V0lwMHOjV23bpzu5VigjTy1XgM"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "origin",
+								"value": "https://demo.realworld.io"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://demo.realworld.io/"
+							},
+							{
+								"key": "accept-language",
+								"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"article\":{\n        \"title\":\"{{ListName}}\",\n        \"description\":\"{{Bla}}\",\n        \"body\":\"I do fancy stuff\",\n        \"tagList\":[\"fancy\"]\n    }\n}"
+						},
+						"url": {
+							"raw": "https://conduit.productionready.io/api/articles",
+							"protocol": "https",
+							"host": [
+								"conduit",
+								"productionready",
+								"io"
+							],
+							"path": [
+								"api",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "Get all tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "conduit.productionready.io"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+							},
+							{
+								"key": "origin",
+								"value": "https://demo.realworld.io"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://demo.realworld.io/"
+							},
+							{
+								"key": "accept-language",
+								"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "if-none-match",
+								"value": "W/\"c4681c79607c871214a0278fc4b675e7\"",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{BaseUrl}}/tags",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authority",
+								"value": "conduit.productionready.io"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+							},
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "origin",
+								"value": "https://demo.realworld.io"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "cross-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://demo.realworld.io/"
+							},
+							{
+								"key": "accept-language",
+								"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": {\n        \"username\": \"ljdjfgbfd\",\n        \"email\": \"dfgghfsgh@dfkjgn.com\",\n        \"password\": \"fdpkjgn984576\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/users",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get feed",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "conduit.productionready.io"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTU4ODgyLCJ1c2VybmFtZSI6ImxqZGpmZ2JmZGNmaGdmZ2hkIiwiZXhwIjoxNjIzNjcwMjg1fQ.TakFjRCcMlIrSyd6vwp06pk106F0syWQkzDf143GWcI"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+					},
+					{
+						"key": "origin",
+						"value": "https://demo.realworld.io"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.realworld.io/"
+					},
+					{
+						"key": "accept-language",
+						"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"f6f6fb081aafa45d6056eb20c0c7a16c\"",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrl}}/articles/feed?limit=10&offset=0&author=ljdjfgbfdcfhgfghd",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"articles",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "author",
+							"value": "ljdjfgbfdcfhgfghd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "conduit.productionready.io"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "origin",
+						"value": "https://demo.realworld.io"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.realworld.io/"
+					},
+					{
+						"key": "accept-language",
+						"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"email\": \"dfgghcghjdghjfsgh@dfkjgn.com\",\n        \"password\": \"fdpkjgn984576\"\n    }\n}"
+				},
+				"url": {
+					"raw": "https://conduit.productionready.io/api/users/login",
+					"protocol": "https",
+					"host": [
+						"conduit",
+						"productionready",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get my articles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "conduit.productionready.io"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "authorization",
+						"value": "Token {{Token}}"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"
+					},
+					{
+						"key": "origin",
+						"value": "https://demo.realworld.io"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.realworld.io/"
+					},
+					{
+						"key": "accept-language",
+						"value": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://conduit.productionready.io/api/articles?author=ljdjfgbfd&limit=5&offset=0",
+					"protocol": "https",
+					"host": [
+						"conduit",
+						"productionready",
+						"io"
+					],
+					"path": [
+						"api",
+						"articles"
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "ljdjfgbfd"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
