@@ -1,8 +1,4 @@
-April 2021
-
-Hallo zusammen,
-
-hier finden sich die Slides zum Vortrag: *Test Automation of Microservices - a 5 layered Test Pyramid*
+November 2021
 
 Presenter: 
 TestBustersNightVIENNA  und #instructor@TestAutomationU Rudolf Groetz 
