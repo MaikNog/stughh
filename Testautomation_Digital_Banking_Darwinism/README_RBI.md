@@ -13,4 +13,4 @@ Due to new approaches such as DevSecOps & Continuous Testing, Microservices the 
 whether manual or automated, had to be completely redesigned and implemented for microservices and mobile app testing.
 This talk gives insights into the test automation strategy & the full-stack test automation architecture that was used.
 
-Link: https://github.com/MaikNog/stughh/blob/main/Testautomation_Digital_Banking_Darwinism/README_RBI.md
+Link: https://github.com/MaikNog/stughh/blob/main/Testautomation_Digital_Banking_Darwinism/2021116_Testautomation_Digital_Banking_Darwinism.pdf
