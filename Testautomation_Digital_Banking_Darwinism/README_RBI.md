@@ -16,3 +16,5 @@ not to oversleep the digitization of the banking industry.
 Due to new approaches such as DevSecOps & Continuous Testing, Microservices the topic of software tests, 
 whether manual or automated, had to be completely redesigned and implemented for microservices and mobile app testing.
 This talk gives insights into the test automation strategy & the full-stack test automation architecture that was used.
+
+Link: https://github.com/MaikNog/stughh/blob/main/Testautomation_Digital_Banking_Darwinism/README_RBI.md
